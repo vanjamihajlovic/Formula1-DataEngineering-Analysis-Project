@@ -1,0 +1,37 @@
+# 1. Airflow specifični fajlovi
+airflow.cfg
+unittests.cfg
+webserver_config.py
+logs/
+dags/__pycache__/
+plugins/__pycache__/
+output_csv/
+airflow.db
+*.pid
+
+# 2. Docker fajlovi
+.env
+.dockerignore
+docker-compose.override.yml
+docker-compose.prod.yml
+docker-compose.dev.yml
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+data/*.parquet
+data/*.csv
+
+# 3. PyCache i venv (ako koristiš lokalno virtualno okruženje)
+venv/
+.env/
+*.log
+*.sqlite
+
+# 4. Parquet i CSV fajlovi ako ne želiš da ih šalješ na Git
+*.parquet
+*.csv
+
+test.py
+output.txt
+dataEngineeringDataset.csv
